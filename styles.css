@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4EAFB;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+    background: #F4EAFB;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.image-section .logo {
+    width: 100px;
+}
+
+.image-section .login-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-section h2 {
+    color: #5E1E74;
+    margin: 10px 0;
+}
+
+.image-section p {
+    color: #333;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.form-section h2 {
+    color: #5E1E74;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5E1E74;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4B1660;
+}
+
+.forgot-password {
+    color: #5E1E74;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+
+
